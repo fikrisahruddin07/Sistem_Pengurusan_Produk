@@ -123,3 +123,58 @@ td button:hover {
     font-size: 0.9rem;
   }
 }
+
+/* TABLE RESPONSIVE (SCROLL) */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* MOBILE DESIGN */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  form input, form button {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  table {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+/* EXTRA SMALL DEVICE */
+@media (max-width: 400px) {
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  table {
+    font-size: 0.75rem;
+  }
+
+  td button {
+    padding: 5px 8px;
+    font-size: 0.7rem;
+  }
+}

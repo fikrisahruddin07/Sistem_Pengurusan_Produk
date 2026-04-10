@@ -1,7 +1,4 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
-    describe('Sistem Pengurusan Produk', () => {
+describe('Sistem Pengurusan Produk', () => {
     
       it('Ujian Paparan', () => {
         cy.visit('http://127.0.0.1:5500/index.html');
@@ -24,5 +21,3 @@ describe('template spec', () => {
       });
     
     });
-  })
-})
