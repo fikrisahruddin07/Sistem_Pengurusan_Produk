@@ -7,174 +7,116 @@
 
 /* BODY */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 20px;
 }
 
 /* TITLE */
 h1 {
-  margin-top: 20px;
+  text-align: center;
   color: white;
+  margin-bottom: 20px;
   font-size: 2rem;
-  letter-spacing: 1px;
 }
 
-/* FORM CONTAINER */
+/* FORM */
 form {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
   background: white;
   padding: 20px;
-  margin-top: 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
 /* INPUT */
 form input {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  outline: none;
-  transition: 0.3s;
+  flex: 1;
+  min-width: 150px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
-form input:focus {
-  border-color: #667eea;
-  box-shadow: 0 0 5px rgba(102,126,234,0.5);
-}
-
-/* BUTTON TAMBAH */
+/* BUTTON */
 form button {
-  padding: 10px 15px;
+  padding: 12px 18px;
   border: none;
-  border-radius: 8px;
-  background: #667eea;
+  border-radius: 10px;
+  background: #00b894;
   color: white;
   cursor: pointer;
-  transition: 0.3s;
+  font-weight: bold;
 }
 
 form button:hover {
-  background: #5a67d8;
+  background: #019875;
 }
 
-/* TABLE CONTAINER */
+/* TABLE */
 table {
   width: 90%;
-  max-width: 800px;
-  margin-top: 20px;
+  max-width: 900px;
+  margin: 25px auto;
   border-collapse: collapse;
   background: white;
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
-/* TABLE HEADER */
+/* HEADER */
 th {
-  background: #667eea;
+  background: #0984e3;
   color: white;
-  padding: 12px;
+  padding: 14px;
 }
 
-/* TABLE DATA */
+/* DATA */
 td {
   padding: 12px;
   text-align: center;
+  border-bottom: 1px solid #eee;
 }
 
-/* ROW STRIPES */
-tr:nth-child(even) {
-  background: #f9f9f9;
-}
-
-/* HOVER EFFECT */
+/* HOVER */
 tr:hover {
-  background: #eef1ff;
+  background: #f1f9ff;
 }
 
-/* BUTTON DELETE */
+/* DELETE BUTTON */
 td button {
-  background: #e53e3e;
-  padding: 6px 12px;
-  border-radius: 6px;
+  background: #d63031;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 td button:hover {
-  background: #c53030;
+  background: #b71c1c;
 }
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
   form {
-    display: flex;
     flex-direction: column;
   }
 
-  form input, form button {
+  form input,
+  form button {
     width: 100%;
   }
 
-  table {
-    font-size: 0.9rem;
-  }
-}
-
-/* TABLE RESPONSIVE (SCROLL) */
-@media (max-width: 768px) {
   table {
     display: block;
     overflow-x: auto;
-    white-space: nowrap;
-  }
-}
-
-/* MOBILE DESIGN */
-@media (max-width: 600px) {
-
-  h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  form input, form button {
-    width: 100%;
-    margin: 8px 0;
-  }
-
-  table {
-    width: 100%;
-    font-size: 0.85rem;
-  }
-
-  th, td {
-    padding: 8px;
-  }
-}
-
-/* EXTRA SMALL DEVICE */
-@media (max-width: 400px) {
-
-  h1 {
-    font-size: 1.2rem;
-  }
-
-  table {
-    font-size: 0.75rem;
-  }
-
-  td button {
-    padding: 5px 8px;
-    font-size: 0.7rem;
   }
 }
